@@ -1,0 +1,5 @@
+@use "./variables" ;
+
+.active-player {
+  background-color: variables.$active-color;
+}
