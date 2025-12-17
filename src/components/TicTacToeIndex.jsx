@@ -16,11 +16,6 @@ const TicTacToeIndex = () => {
     [null, null, null],
     ]);
     const handleBoardClick = (rowIndex,cellIndex) => {
-        // const winner = calculateWinner(board);
-        // if (winner){
-        //     console.log("Game Over! Winner is:", winner);
-        //     return;
-        // }
         if (board[rowIndex][cellIndex] !== null){
             return; 
         }
@@ -41,7 +36,6 @@ const TicTacToeIndex = () => {
         if (draw) {
             setWinner(null);
             setIsOpenModal(true);
-            // show draw modal here
             return;
         }
         setActivePlayer((prev)=> prev === "X" ? "O" : "X");
